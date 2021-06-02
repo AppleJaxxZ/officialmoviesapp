@@ -1,0 +1,123 @@
+.flexed-trending {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+.flexed-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.trending-container {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  list-style: none;
+  align-items: center;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none; /* IE and Edg*/
+  scrollbar-width: none; /* Firefox */
+}
+.trending-container::-webkit-scrollbar {
+  display: none;
+}
+
+.flexed-trending::-webkit-scrollbar {
+  display: none;
+}
+
+.poster-container {
+  padding: 0;
+  margin: 0;
+  transform: rotateX(0deg) rotateZ(0deg);
+  transform-style: preserve-3d;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0 0px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+  transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
+  animation: ani 2s infinite;
+  -webkit-animation: ani 2s infinite;
+}
+
+.poster-container:hover {
+  transform: translate3d(0px, -2px, 0px) rotateX(0deg) rotateZ(0deg);
+  box-shadow: 0px 0px 0 0px #f9f9fb, -1px 0 17px 0 rgba(34, 33, 81, 0.01),
+    54px 54px 28px -10px rgba(34, 33, 81, 0.15);
+}
+
+.row-label {
+  position: relative;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.list-item {
+  list-style: none;
+  flex: 0 0 auto;
+  width: 250px;
+  height: 100%;
+  padding: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* returned movie rows and elements */
+
+.img-container h1 {
+  padding: 10px;
+}
+
+.image-element {
+  width: 250px;
+  height: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding: 10 5 10 5;
+}
+
+/* .image-element:hover {
+  margin-left: 0 40px;
+  cursor: pointer;
+  transform: scale(1);
+  padding: 0;
+} */
+
+.posterTitle {
+  padding-bottom: 60px;
+  margin: 0;
+  height: 2rem;
+}
+
+.posterTitle h3 {
+  color: black;
+}
+
+.data-container {
+  padding: 5px;
+}
+
+.img-container h1 {
+  padding: 10px;
+}
+
+.image-element {
+  width: 250px;
+  height: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding: 10 10 10 10;
+}
+
+.image-element:hover {
+  margin-left: 0 40px;
+  cursor: pointer;
+  transform: scale(1);
+  padding: 0;
+}

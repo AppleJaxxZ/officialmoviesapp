@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+.form-div {
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.searchbar {
+  width: 760px;
+  font-size: 1 rem;
+  font-weight: 400;
+  line-height: 1.5;
+  outline: none;
+  background-color: blanchedalmond;
+  color: grey;
+  border: 1x solid blueviolet;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+}
+
+.searchBtn {
+  color: white;
+  background-color: black;
+  font-size: 1rem;
+  outline: none;
+  min-height: 36px;
+  font-weight: 400px;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+}
+
+.searchBtn:hover {
+  background-color: blue;
+}
+
+/* returned movie rows and elements */
+
+.img-container h1 {
+  padding: 10px;
+}
+
+.image-element {
+  width: 250px;
+  height: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding: 10 10 10 10;
+}
+
+.image-element:hover {
+  margin-left: 0 40px;
+  cursor: pointer;
+  transform: scale(1);
+  padding: 0;
+}
+
+.posterTitle {
+  padding-bottom: 0;
+  margin: 0;
+  height: 2rem;
+}
+
+.data-container {
+  padding: 5px;
+}
+
+.flexed-search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+.byName-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10 0 10 0;
+  list-style: none;
+  align-items: center;
+  padding-bottom: 20px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  padding-bottom: 20px;
+}
+
+.list-item {
+  list-style: none;
+  flex: 0 0 auto;
+  width: 250px;
+  height: 100%;
+  padding: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+}
+
+.row-label {
+  position: relative;
+  padding-left: 20px;
+  margin: 0;
+}
+
+/* Hide Scroll Bars But Leave Functionality for Chrome, Safari, and Opera */
+
+.byName-container::-webkit-scrollbar {
+  display: none;
+}
+
+.poster-container {
+  padding: 10px;
+  margin: 0;
+}
+
+.posterTitle {
+  color: white;
+}
