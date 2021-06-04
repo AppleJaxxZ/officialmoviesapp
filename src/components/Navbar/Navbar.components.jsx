@@ -7,15 +7,30 @@ export const Navbar = ({ history }) => {
   console.log(history);
   return (
     <Router>
-      <div>
+      <div className="nav-container">
         <ul className="flex-navlist">
-          <li onClick={() => history.push("/")}>Home</li>
-          <li onClick={() => history.push("/search")}>Search</li>
-          <li onClick={() => history.push("/trending")}>Trending</li>
-          <li>
-            <li onClick={() => history.push("/upcomming")}>Upcomming</li>
+          <li onClick={() => history.push("/")}>
+            <i className="fa fa-home"></i>
+            Home
           </li>
-          <li>Favorites</li>
+          <li onClick={() => history.push("/search")}>
+            <i className="fa fa-search"></i>
+            Search
+          </li>
+          <li onClick={() => history.push("/trending")}>
+            <i className="fa fa-line-chart"></i>
+            Trending
+          </li>
+          <li>
+            <li onClick={() => history.push("/upcomming")}>
+              <i className="fa fa-binoculars"></i>
+              Upcomming
+            </li>
+          </li>
+          <li>
+            <i className="fa fa-star"></i>Favorites
+            <i className="fa fa-star"></i>
+          </li>
         </ul>
       </div>
     </Router>
