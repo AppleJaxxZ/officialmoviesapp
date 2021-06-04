@@ -29,7 +29,11 @@ function SearchResults({ movieItem }) {
               title={`--Title: ${movieItem.title}--  --Description:    
        ${movieItem.overview}--  --Vote Average: ${movieItem.vote_average}`}
               aria-label={movieItem.title}
-              src={`https://image.tmdb.org/t/p/w500${movieItem.poster_path}`}
+              src={
+                movieItem.poster_path
+                  ? `https://image.tmdb.org/t/p/w500${movieItem.poster_path}`
+                  : "https://image.shutterstock.com/image-vector/no-user-profile-picture-hand-260nw-99335579.jpg"
+              }
             />
           </a>
           <h3 className="posterTitle">{movieItem.title}</h3>
