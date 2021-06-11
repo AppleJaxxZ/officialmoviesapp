@@ -1,32 +1,37 @@
 export const sections = [
   {
     title: "Search",
-    imageUrl: "",
+    imageUrl:
+      "https://icon-library.net/images/movies-icon-png/movies-icon-png-0.jpg",
     id: 1,
     linkUrl: "/search",
   },
   {
     title: "Trending",
-    imageUrl: "",
+    imageUrl:
+      "https://icon-library.net/images/movies-icon-png/movies-icon-png-0.jpg",
     id: 2,
     linkUrl: "/trending",
   },
   {
     title: "Upcomming",
-    imageUrl: "",
+    imageUrl:
+      "https://icon-library.net/images/movies-icon-png/movies-icon-png-0.jpg",
     id: 3,
     linkUrl: "/upcomming",
   },
   {
     title: "Favorites",
-    imageUrl: "",
+    imageUrl:
+      "https://icon-library.net/images/movies-icon-png/movies-icon-png-0.jpg",
     size: "large",
     id: 4,
     linkUrl: "/favorites",
   },
   {
-    title: "Sign In / Sign Up",
-    imageUrl: "",
+    title: "Sign In / Sign",
+    imageUrl:
+      "https://icon-library.net/images/movies-icon-png/movies-icon-png-0.jpg",
     size: "large",
     id: 5,
     linkUrl: "/",

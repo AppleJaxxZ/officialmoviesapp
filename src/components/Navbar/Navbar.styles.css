@@ -1,9 +1,3 @@
-.nav-container {
-  background-image: url(C:\users\user\desktop\Projects\movieapp\src\media\sword.png);
-  /* background-position: center;
-  z-index: 5; */
-}
-
 .flex-navlist {
   display: flex;
   flex-direction: row;
