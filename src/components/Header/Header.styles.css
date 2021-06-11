@@ -30,6 +30,11 @@
   -webkit-animation: ani 2s infinite;
 }
 
+#knight {
+  width: 55.33px;
+  height: 80px;
+}
+
 #caption {
   font-family: "Satisfy", cursive, Arial, Helvetica, sans-serif;
   font-size: large;

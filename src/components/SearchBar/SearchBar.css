@@ -72,7 +72,7 @@ form {
 }
 
 .posterTitle {
-  padding-bottom: 0;
+  padding-bottom: 20px;
   margin: 0;
   height: 2rem;
 }
@@ -85,9 +85,10 @@ form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 100%;
+  height: 80%;
   padding: 10px;
   margin-left: 50px;
+  padding-bottom: 30px;
 }
 
 .byName-container {
