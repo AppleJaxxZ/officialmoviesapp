@@ -27,8 +27,8 @@ export const Navbar = ({ history }) => {
               Upcomming
             </li>
           </li>
-          <li>
-            <i className="fa fa-star"></i>Favorites
+          <li onClick={() => history.push("/SignInAndSignUp")}>
+            <i className="fa fa-star"></i>SignInAndSignUp
             <i className="fa fa-star"></i>
           </li>
         </ul>

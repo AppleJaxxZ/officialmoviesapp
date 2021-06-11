@@ -6,7 +6,7 @@ import TrendingPage from "./Pages/Trending/Trending.page";
 import SearchPage from "./Pages/Search/Search.page";
 import UpcommingPage from "./Pages/Upcomming/Upcomming.page";
 import HomePage from "./Pages/Home/Home.pages";
-
+import SignInAndSignUpPage from "./Pages/SignInAndSignUp/SignInAndSignUpPage.components";
 function App() {
   return (
     <div className="App">
@@ -18,6 +18,7 @@ function App() {
         <Route path="/trending" component={TrendingPage} />
         <Route path="/upcomming" component={UpcommingPage} />
         <Route exact path="/search" component={SearchPage} />
+        <Route exact path="/signinandsignup" component={SignInAndSignUpPage} />
       </Switch>
     </div>
   );

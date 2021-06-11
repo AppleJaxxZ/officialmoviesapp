@@ -29,11 +29,11 @@ export const sections = [
     linkUrl: "/favorites",
   },
   {
-    title: "Other",
+    title: "Sign In / Sign Up",
     imageUrl:
       "https://icon-library.net/images/movies-icon-png/movies-icon-png-0.jpg",
     size: "large",
     id: 5,
-    linkUrl: "/",
+    linkUrl: "/signinandsignup",
   },
 ];
