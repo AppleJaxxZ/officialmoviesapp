@@ -1,39 +1,34 @@
 export const sections = [
   {
     title: "Search",
-    imageUrl:
-      "https://icon-library.net/images/movies-icon-png/movies-icon-png-0.jpg",
+    imageUrl: "",
     id: 1,
     linkUrl: "/search",
   },
   {
     title: "Trending",
-    imageUrl:
-      "https://icon-library.net/images/movies-icon-png/movies-icon-png-0.jpg",
+    imageUrl: "",
     id: 2,
     linkUrl: "/trending",
   },
   {
     title: "Upcomming",
-    imageUrl:
-      "https://icon-library.net/images/movies-icon-png/movies-icon-png-0.jpg",
+    imageUrl: "",
     id: 3,
     linkUrl: "/upcomming",
   },
   {
     title: "Favorites",
-    imageUrl:
-      "https://icon-library.net/images/movies-icon-png/movies-icon-png-0.jpg",
+    imageUrl: "",
     size: "large",
     id: 4,
     linkUrl: "/favorites",
   },
   {
     title: "Sign In / Sign Up",
-    imageUrl:
-      "https://icon-library.net/images/movies-icon-png/movies-icon-png-0.jpg",
+    imageUrl: "",
     size: "large",
     id: 5,
-    linkUrl: "/signinandsignup",
+    linkUrl: "/",
   },
 ];
