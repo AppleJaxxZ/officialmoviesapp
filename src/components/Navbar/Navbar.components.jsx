@@ -2,8 +2,9 @@ import React from "react";
 import "../Navbar/Navbar.styles.css";
 import { withRouter } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
+import { auth } from "../../firebase/firebase.utils";
 
-export const Navbar = ({ history }) => {
+export const Navbar = ({ history, currentUser }) => {
   console.log(history);
   return (
     <Router>
@@ -27,10 +28,15 @@ export const Navbar = ({ history }) => {
               Upcomming
             </li>
           </li>
-          <li onClick={() => history.push("/SignInAndSignUp")}>
-            <i className="fa fa-star"></i>SignInAndSignUp
-            <i className="fa fa-star"></i>
-          </li>
+          {currentUser ? (
+            <li className="option" onClick={() => auth.signOut()}>
+              SIGN OUT
+            </li>
+          ) : (
+            <li onClick={() => history.push("/SignInAndSignUp")}>
+              SIGN IN / SIGN UP
+            </li>
+          )}
         </ul>
       </div>
     </Router>

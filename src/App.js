@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar.components";
@@ -7,21 +8,49 @@ import SearchPage from "./Pages/Search/Search.page";
 import UpcommingPage from "./Pages/Upcomming/Upcomming.page";
 import HomePage from "./Pages/Home/Home.pages";
 import SignInAndSignUpPage from "./Pages/SignInAndSignUp/SignInAndSignUpPage.components";
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Navbar />
+import { auth } from "./firebase/firebase.utils";
+class App extends React.Component {
+  constructor() {
+    super();
 
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/trending" component={TrendingPage} />
-        <Route path="/upcomming" component={UpcommingPage} />
-        <Route exact path="/search" component={SearchPage} />
-        <Route exact path="/signinandsignup" component={SignInAndSignUpPage} />
-      </Switch>
-    </div>
-  );
+    this.state = {
+      currentUser: null,
+    };
+  }
+
+  unsubscribeFromAuth = null;
+
+  componentDidMount() {
+    this.unsubscribeFromAuth = auth.onAuthStateChanged((user) => {
+      this.setState({ currentUser: user });
+
+      console.log(user);
+    });
+  }
+
+  componentWillUnmount() {
+    this.unsubscribeFromAuth();
+  }
+  render() {
+    return (
+      <div className="App">
+        <Header />
+        <Navbar currentUser={this.state.currentUser} />
+
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/trending" component={TrendingPage} />
+          <Route path="/upcomming" component={UpcommingPage} />
+          <Route exact path="/search" component={SearchPage} />
+          <Route
+            exact
+            path="/signinandsignup"
+            component={SignInAndSignUpPage}
+          />
+        </Switch>
+      </div>
+    );
+  }
 }
 
 export default App;
