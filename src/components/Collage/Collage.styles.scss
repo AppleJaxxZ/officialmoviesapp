@@ -1,0 +1,14 @@
+.collage-img {
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+  @media screen and (max-width: 480px) {
+    transform: scale(0.95);
+    margin: -350px;
+  }
+}
+
+.collage {
+  overflow: hidden;
+}

@@ -14,26 +14,29 @@ export const Navbar = ({ history, currentUser }) => {
             <i className="fa fa-home"></i>
             Home
           </li>
-          <li onClick={() => history.push("/search")}>
-            <i className="fa fa-search"></i>
-            Search
-          </li>
-          <li onClick={() => history.push("/trending")}>
-            <i className="fa fa-line-chart"></i>
-            Trending
-          </li>
-          <li>
-            <li onClick={() => history.push("/upcomming")}>
-              <i className="fa fa-binoculars"></i>
-              Upcomming
-            </li>
-          </li>
           {currentUser ? (
-            <li className="option" onClick={() => auth.signOut()}>
-              SIGN OUT
-            </li>
+            <ul className="signedIn-navbar">
+              <li onClick={() => history.push("/search")}>
+                <i className="fa fa-search"></i>
+                Search
+              </li>
+              <li onClick={() => history.push("/trending")}>
+                <i className="fa fa-line-chart"></i>
+                Trending
+              </li>
+              <li onClick={() => history.push("/upcomming")}>
+                <i className="fa fa-binoculars"></i>
+                Upcomming
+              </li>
+              <li className="option" onClick={() => auth.signOut()}>
+                SIGN OUT
+              </li>
+            </ul>
           ) : (
-            <li onClick={() => history.push("/SignInAndSignUp")}>
+            <li
+              className="signInSignUp"
+              onClick={() => history.push("/SignInAndSignUp")}
+            >
               SIGN IN / SIGN UP
             </li>
           )}

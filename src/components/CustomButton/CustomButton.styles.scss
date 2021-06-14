@@ -6,8 +6,8 @@
   line-height: 50px;
   padding: 0 35px 0 35px;
   font-size: 15px;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   text-transform: uppercase;
   font-family: "Open Sans Condensed";
   font-weight: bolder;
@@ -15,6 +15,7 @@
   cursor: pointer;
   display: flex;
   justify-content: center;
+  border: 1px solid white;
 
   &:hover {
     background-color: black;

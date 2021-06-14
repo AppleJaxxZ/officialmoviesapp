@@ -86,7 +86,9 @@ class SignUp extends React.Component {
             autoComplete="new-password"
             required
           />
-          <CustomButton type="submit">SIGN UP</CustomButton>
+          <CustomButton id="signUpbtn" type="submit">
+            SIGN UP
+          </CustomButton>
         </form>
       </div>
     );
