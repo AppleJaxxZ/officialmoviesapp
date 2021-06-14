@@ -1,7 +1,5 @@
 import React from "react";
 import "../Header/Header.styles.css";
-import knight from "../../media/knight4.png";
-import DarkKnight from "./../../media/darkknight.png";
 import CartoonKnight from "../../media/cartoonKnight.png";
 
 const Header = () => (
