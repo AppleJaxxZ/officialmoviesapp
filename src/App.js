@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, withRouter } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar.components";
 import Header from "./components/Header/Header.components";
 import TrendingPage from "./Pages/Trending/Trending.page";
@@ -23,8 +23,9 @@ class App extends React.Component {
   componentDidMount() {
     this.unsubscribeFromAuth = auth.onAuthStateChanged((user) => {
       this.setState({ currentUser: user });
-
-      console.log(user);
+      if (this.state.currentUser) {
+        this.props.history.push("/trending");
+      }
     });
   }
 
@@ -53,4 +54,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default withRouter(App);

@@ -10,10 +10,6 @@ export const Navbar = ({ history, currentUser }) => {
     <Router>
       <div className="nav-container">
         <ul className="flex-navlist">
-          <li onClick={() => history.push("/")}>
-            <i className="fa fa-home"></i>
-            Home
-          </li>
           {currentUser ? (
             <ul className="signedIn-navbar">
               <li onClick={() => history.push("/search")}>
