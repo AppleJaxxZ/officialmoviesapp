@@ -4,4 +4,6 @@
   align-items: center;
   padding: 20px 80px;
   overflow-x: hidden;
+  width: 700px;
+  height: auto;
 }

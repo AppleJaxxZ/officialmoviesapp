@@ -9,9 +9,6 @@
 }
 
 .header-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   height: 5rem;
   transform: rotateX(0deg) rotateZ(0deg);
   transform-style: preserve-3d;
@@ -20,6 +17,42 @@
   transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
   animation: ani 2s infinite;
   -webkit-animation: ani 2s infinite;
+  position: relative;
+}
+
+.header__dots-flexed {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 14rem;
+  top: -0.3rem;
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: inline-block;
+
+  &#one {
+    background-color: yellow;
+  }
+  &#two {
+    background-color: orangered;
+  }
+  &#three {
+    background-color: red;
+  }
+  &#four {
+    background-color: purple;
+  }
+  &#five {
+    background-color: blue;
+  }
+  &#six {
+    background-color: green;
+  }
 }
 
 #knight {
