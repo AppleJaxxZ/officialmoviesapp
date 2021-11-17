@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./trending.css";
 
-const key = "fde5ddeba3b7dec3fc1f51852ca0fb95";
+const key = process.env.REACT_APP_APIKEY;
 
 const TrendingMovies = () => {
   const [trending, setTrending] = useState([]);

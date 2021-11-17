@@ -1,31 +1,28 @@
 .flex-navlist {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
   font-weight: bold;
-  padding-bottom: 20px;
-}
-
-.flex-navlist li {
+  padding-bottom: 2rem;
   list-style: none;
-  padding: 5px;
-}
+  &li {
+    list-style: none;
+    padding: 0.5rem;
+  }
 
-.flex-navlist li:hover {
-  transform: scale(1.1);
-}
-
-i {
-  padding-right: 5px;
-  padding-left: 5px;
+  &li:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
 }
 
 .signedIn-navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  &li:hover {
+    cursor: pointer;
+  }
 }
 
 .signInSignUp {
+  display: inline-block;
   background-color: gold;
   color: black;
   border: none;
@@ -41,4 +38,7 @@ i {
     margin: 0px;
     padding: 0px;
   }
+}
+
+.nav-container {
 }

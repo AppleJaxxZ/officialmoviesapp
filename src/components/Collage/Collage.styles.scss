@@ -1,14 +1,11 @@
 .collage-img {
-  position: absolute;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   width: 100%;
-  height: 100vh;
+  height: auto;
   opacity: 0.5;
 
   @media screen and (max-width: 480px) {
-    transform: scale(0.95);
-    margin: -350px;
   }
 }
 
@@ -28,7 +25,13 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 2rem;
+  font-size: 1rem;
   transform: translate(-50%, -50%);
   text-align: center;
+  font-size: 3rem;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.3rem;
+    top: 25%;
+  }
 }

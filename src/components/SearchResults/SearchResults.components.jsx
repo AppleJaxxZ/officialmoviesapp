@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 function SearchResults({ movieItem }) {
   const [searchLink, setSearchLink] = useState(null);
-  const key = "fde5ddeba3b7dec3fc1f51852ca0fb95";
+  const key = process.env.REACT_APP_APIKEY;
 
   const getMovieProvider = (movieId) => {
     const url = `https://api.themoviedb.org/3/movie/${movieId}/watch/providers?api_key=${key}`;

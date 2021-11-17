@@ -1,5 +1,5 @@
 import React from "react";
-import "../Navbar/Navbar.styles.css";
+import "../Navbar/Navbar.styles.scss";
 import { withRouter } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import { auth } from "../../firebase/firebase.utils";
@@ -10,24 +10,12 @@ export const Navbar = ({ history, currentUser }) => {
     <Router>
       <div className="nav-container">
         <ul className="flex-navlist">
-          <li onClick={() => history.push("/")}>
-            <i className="fa fa-home"></i>
-            Home
-          </li>
           {currentUser ? (
             <ul className="signedIn-navbar">
-              <li onClick={() => history.push("/search")}>
-                <i className="fa fa-search"></i>
-                Search
-              </li>
-              <li onClick={() => history.push("/trending")}>
-                <i className="fa fa-line-chart"></i>
-                Trending
-              </li>
-              <li onClick={() => history.push("/upcomming")}>
-                <i className="fa fa-binoculars"></i>
-                Upcomming
-              </li>
+              <li onClick={() => history.push("/search")}>Search</li>
+              <li onClick={() => history.push("/trending")}>Trending</li>
+              <li onClick={() => history.push("/upcomming")}>Upcomming</li>
+              <li>TV Shows</li>
               <li className="option" onClick={() => auth.signOut()}>
                 SIGN OUT
               </li>

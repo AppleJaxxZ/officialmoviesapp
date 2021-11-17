@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./Upcoming.css";
 
-const key = "fde5ddeba3b7dec3fc1f51852ca0fb95";
+const key = process.env.REACT_APP_APIKEY;
 
 const UpcomingMovies = () => {
   const [upcoming, setUpcoming] = useState([]);
+  console.log(key);
 
   useEffect(() => {
     const upcomingUrl = `https://api.themoviedb.org/3/movie/upcoming?api_key=${key}`;
