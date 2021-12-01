@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import "./trending.css";
-
 const key = process.env.REACT_APP_APIKEY;
-
 const TrendingMovies = () => {
   const [trending, setTrending] = useState([]);
 
@@ -40,6 +38,9 @@ function MovieDetail({ movieItem }) {
       .then((res) => res.json())
       .then((res) => {
         setMovie(res?.results?.US?.link);
+      })
+      .catch((error) => {
+        console.log("Error!! Trending data interrupted!:", error);
       });
   }, [movieItem.id]);
 

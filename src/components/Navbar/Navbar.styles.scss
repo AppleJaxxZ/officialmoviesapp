@@ -22,11 +22,20 @@
 }
 
 .signInSignUp {
-  display: inline-block;
-  background-color: gold;
-  color: black;
-  border: none;
+  display: block;
+  background-color: black;
+  color: #c6c6c6;
+  border: 2px solid #c6c6c6;
+  height: 5rem;
+  width: 12rem;
   border-radius: 8px;
+  text-align: center;
+  padding-top: 1.7rem;
+  font-size: 1.1rem;
+  margin-left: 60vw;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -38,7 +47,10 @@
     margin: 0px;
     padding: 0px;
   }
-}
 
-.nav-container {
+  .signInSignUp {
+    height: 3rem;
+    width: 10.5rem;
+    padding-top: 0.5rem;
+  }
 }

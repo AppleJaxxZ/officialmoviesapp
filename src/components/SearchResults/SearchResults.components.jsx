@@ -4,18 +4,20 @@ function SearchResults({ movieItem }) {
   const [searchLink, setSearchLink] = useState(null);
   const key = process.env.REACT_APP_APIKEY;
 
-  const getMovieProvider = (movieId) => {
-    const url = `https://api.themoviedb.org/3/movie/${movieId}/watch/providers?api_key=${key}`;
-    return fetch(url);
-  };
-
-  useEffect(() => {
-    getMovieProvider(movieItem.id)
-      .then((res) => res.json())
-      .then((res) => {
-        setSearchLink(res?.results?.US?.link);
-      });
-  }, [movieItem.id]);
+  useEffect(
+    (movieId) => {
+      const url = `https://api.themoviedb.org/3/movie/${movieId}/watch/providers?api_key=${key}`;
+      fetch(url)
+        .then((res) => res.json())
+        .then((res) => {
+          setSearchLink(res?.results?.US?.link);
+        })
+        .catch((error) => {
+          console.log("Error!! Search data interrupted!:", error);
+        });
+    },
+    [movieItem.id, key]
+  );
 
   return (
     <ul className="flexed-search">
