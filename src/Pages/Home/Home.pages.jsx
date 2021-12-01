@@ -5,6 +5,7 @@ import TopRated from "../../components/top-rated/Toprated.components";
 const HomePage = () => (
   <div className="homepage">
     <Collage />
+
     <TopRated />
   </div>
 );
