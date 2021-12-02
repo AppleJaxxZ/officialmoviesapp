@@ -1,0 +1,45 @@
+.collage-img {
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+.collage {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.text-overlay {
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 480px) {
+  .text-overlay {
+    font-size: 1.3rem;
+    top: 25%;
+  }
+}
+/*# sourceMappingURL=Collage.styles.css.map */

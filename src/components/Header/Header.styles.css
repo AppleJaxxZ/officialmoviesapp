@@ -1,0 +1,101 @@
+.header {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  background-color: none;
+}
+
+.header-container {
+  height: 5rem;
+  -webkit-transform: rotateX(0deg) rotateZ(0deg);
+          transform: rotateX(0deg) rotateZ(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-shadow: 0px 0px 0 0px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01), 28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+          box-shadow: 0px 0px 0 0px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01), 28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+  -webkit-transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
+  transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
+  animation: ani 2s infinite;
+  -webkit-animation: ani 2s infinite;
+  position: relative;
+}
+
+.header-container:hover {
+  cursor: pointer;
+}
+
+.header__dots-flexed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  left: 14.5rem;
+  top: -0.3rem;
+}
+
+.dot {
+  width: 0.5rem;
+  margin: 0.1rem;
+  height: 0.5rem;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot#one {
+  background-color: #fccc12;
+}
+
+.dot#two {
+  background-color: #ff7112;
+}
+
+.dot#three {
+  background-color: #ef1541;
+}
+
+.dot#four {
+  background-color: #6e55dc;
+}
+
+.dot#five {
+  background-color: #0000e9;
+}
+
+.dot#six {
+  background-color: #05ac3f;
+}
+
+#knight {
+  width: 130.33px;
+  height: 90px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  #knight {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+#caption {
+  font-family: "Satisfy", cursive, Arial, Helvetica, sans-serif;
+  font-size: large;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 447px) {
+  #caption {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Header.styles.css.map */

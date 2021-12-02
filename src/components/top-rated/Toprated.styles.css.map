@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,2BAA2B,CAAC;EAC1B,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;CACpB;;AAED,AAAA,uBAAuB,CAAC;EACtB,SAAS,EAAE,IAAI;CAChB",
+    "sources": [
+        "Toprated.styles.scss"
+    ],
+    "names": [],
+    "file": "Toprated.styles.css"
+}

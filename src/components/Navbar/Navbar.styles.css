@@ -1,0 +1,70 @@
+.flex-navlist {
+  font-weight: bold;
+  padding-bottom: 2rem;
+  list-style: none;
+}
+
+.flex-navlistli {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.flex-navlistli:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.signedIn-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.signedIn-navbarli:hover {
+  cursor: pointer;
+}
+
+.signInSignUp {
+  display: block;
+  background-color: black;
+  color: #c6c6c6;
+  border: 2px solid #c6c6c6;
+  height: 5rem;
+  width: 12rem;
+  border-radius: 8px;
+  text-align: center;
+  padding-top: 1.7rem;
+  font-size: 1.1rem;
+  margin-left: 60vw;
+}
+
+.signInSignUp:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .flex-navlist {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-line-pack: flex-starts;
+        align-content: flex-starts;
+    margin-top: 20px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .signInSignUp {
+    height: 3rem;
+    width: 10.5rem;
+    padding-top: 0.5rem;
+  }
+}
+/*# sourceMappingURL=Navbar.styles.css.map */
